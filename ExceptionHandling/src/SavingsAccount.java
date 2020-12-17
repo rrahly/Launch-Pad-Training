@@ -3,7 +3,7 @@ public class SavingsAccount extends Account{
         Account a= new Account();
         a.validateAccount();
         IncorrectAccountTypeException iae= new IncorrectAccountTypeException();
-        iae.IncorrectAccountType();
+        iae.getMessage();
 
     }
 }

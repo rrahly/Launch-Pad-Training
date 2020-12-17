@@ -1,8 +1,12 @@
 public class IncorrectAccountTypeException extends UnidentifiedAccoutException{
     //private  UnidentifiedAccoutException IncorrectAccountTypeException;
-
-    public void IncorrectAccountType(){
+    @Override
+    public String getMessage(){
         System.out.println("Incorrect Account Type Exception");
-        //throw IncorrectAccountTypeException;
+        return ""; //To change body of generated methods, choose Tools | Templates.
     }
+//    public void IncorrectAccountType(){
+//        System.out.println("Incorrect Account Type Exception");
+//        //throw IncorrectAccountTypeException;
+//    }
 }

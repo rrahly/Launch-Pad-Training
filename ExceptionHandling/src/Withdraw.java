@@ -4,7 +4,7 @@ public class Withdraw {
         BalanceValidation bv= new BalanceValidation();
         bv.validate();
         TransactionException te= new TransactionException();
-        te.Transaction();
+        te.getMessage();
         //throw te;
 
     }

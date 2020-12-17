@@ -4,7 +4,7 @@ public class BalanceValidation {
         SavingsAccount sv= new SavingsAccount();
         sv.validateAccount();
         InsufficientFundsException ife= new InsufficientFundsException();
-        ife.Insufficientfunds();
+        ife.getMessage();
 
     }
 }
