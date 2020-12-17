@@ -5,17 +5,17 @@ public class NumberReversal {
     public static void main(String [] args){
         Scanner sc= new Scanner(System.in);
         System.out.println("Enter a number less than 8 digits that doesn't end with zero");
-        int num= sc.nextInt();
+        int number= sc.nextInt();
 
-        int reversedNum = 0;
-        int rem = 0;
+        int reversedNumber = 0;
+        int remainder = 0;
 
-        while(num> 0){
-            reversedNum *= 10;
-            rem = num % 10;
-            num= (num - rem)/10;
-            reversedNum += rem;
+        while(number> 0){
+            reversedNumber *= 10;
+            remainder = number % 10;
+            number= (number - remainder)/10;
+            reversedNumber += remainder;
         }
-        System.out.println(reversedNum);
+        System.out.println(reversedNumber);
     }
 }
