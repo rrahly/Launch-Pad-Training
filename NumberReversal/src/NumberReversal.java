@@ -1,21 +1,27 @@
-import java.math.BigInteger;
 import java.util.Scanner;
 
 public class NumberReversal {
     public static void main(String [] args){
-        Scanner sc= new Scanner(System.in);
+        Scanner scanner= new Scanner(System.in);
         System.out.println("Enter a number less than 8 digits that doesn't end with zero");
-        int number= sc.nextInt();
+        int initialNumber= scanner.nextInt();
 
-        int reversedNumber = 0;
+        int finalNumber = 0;
         int remainder = 0;
 
-        while(number> 0){
-            reversedNumber *= 10;
-            remainder = number % 10;
-            number= (number - remainder)/10;
-            reversedNumber += remainder;
+//        for(int remainder= 0;initialNumber >0; finalNumber*= 10,finalNumber+=remainder, initialNumber-=remainder, initialNumber/=10 ){
+//            remainder= initialNumber % 10;
+//
+//        }
+
+        while(initialNumber> 0){
+            remainder = initialNumber % 10;
+            finalNumber = finalNumber * 10;
+            finalNumber = finalNumber + remainder;
+            initialNumber= initialNumber - remainder;
+            initialNumber = initialNumber /10;
+
         }
-        System.out.println(reversedNumber);
+        System.out.println(finalNumber);
     }
 }
